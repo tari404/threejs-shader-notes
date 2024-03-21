@@ -1,7 +1,7 @@
 <template>
   <div class="fixed inset-0 flex flex-col">
     <header class="shrink-0 h-10 px-2 flex items-center border-b bg-slate-100">
-      Threejs Shader Notes
+      Threejs Shader Notes (v{{ REVISION }})
     </header>
 
     <main class="flex-1 h-0 flex flex-col">
@@ -116,6 +116,8 @@
 </template>
 
 <script setup lang="ts">
+import { REVISION } from 'three'
+
 import { ShaderLibKeys } from '@/lib/index'
 
 import CodeLine from '@/components/code/Line.vue'
